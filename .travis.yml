@@ -13,5 +13,6 @@ jobs:
     - stage: test
       script: ./tests.sh
 deploy:
-        provider: heroku
-        api_key:
+  provider: heroku
+  api_key: ...
+  app: dipslab1
