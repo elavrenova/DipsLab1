@@ -14,5 +14,5 @@ jobs:
       script: ./tests.sh
 deploy:
   provider: heroku
-  api_key: ...
-  app: dipslab1
+  api_key:
+    secure: 
