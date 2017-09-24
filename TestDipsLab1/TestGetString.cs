@@ -10,7 +10,7 @@ namespace TestDipsLab1
         public void TestZeroValueEmptyName()
         {
             var controller = new ValuesController();
-            Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
+            Assert.AreEqual(controller.GetString(0, null), "Somebody doesn't have any cats");
         }
 
         [TestMethod]
@@ -24,14 +24,14 @@ namespace TestDipsLab1
         public void TestZeroValueName()
         {
             var controller = new ValuesController();
-            Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
+            Assert.AreEqual(controller.GetString(0, "Maria"), "Maria doesn't have any cats");
         }
 
         [TestMethod]
         public void TestValueName()
         {
             var controller = new ValuesController();
-            Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
+            Assert.AreEqual(controller.GetString(3, "Peter"), "Peter has 3 cats");
         }
     }
 }
