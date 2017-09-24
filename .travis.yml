@@ -12,3 +12,7 @@ jobs:
       script: ./build.sh
     - stage: test
       script: ./tests.sh
+    - stage: deploy:
+      provider: heroku
+      api_key: ...
+      app: dipslab1
