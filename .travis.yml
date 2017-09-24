@@ -11,4 +11,4 @@ jobs:
     - stage: build
       script: ./build.sh
     - stage: test
-      script: ./test.sh
+      script: ./tests.sh
