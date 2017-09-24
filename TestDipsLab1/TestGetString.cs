@@ -33,5 +33,12 @@ namespace TestDipsLab1
             var controller = new ValuesController();
             Assert.AreEqual(controller.GetString(3, "Peter"), "Peter has 3 cats");
         }
+
+        [TestMethod]
+        public void TestName()
+        {
+
+        }
+
     }
 }
