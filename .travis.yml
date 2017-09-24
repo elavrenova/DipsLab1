@@ -9,4 +9,4 @@ before_script:
   - chmod a+x ./tests.sh
 script:
   - ./build.sh
-dotnet test ./TestsDipsLab1
+  - dotnet test ./TestsDipsLab1/TestsDipsLab1.csproj
