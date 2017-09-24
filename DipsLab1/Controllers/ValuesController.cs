@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DipsLab1.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/")]
     public class ValuesController : Controller
     {
 
