@@ -6,3 +6,4 @@ dotnet: 2.0.0
 dist: trusty
 script:
   - ./build.sh
+  - ./tests.sh
