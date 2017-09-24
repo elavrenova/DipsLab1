@@ -7,7 +7,28 @@ namespace TestDipsLab1
     public class TestGetString
     {
         [TestMethod]
-        public void TestEmptyName()
+        public void TestZeroValueEmptyName()
+        {
+            var controller = new ValuesController();
+            Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
+        }
+
+        [TestMethod]
+        public void TestValueEmptyName()
+        {
+            var controller = new ValuesController();
+            Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
+        }
+
+        [TestMethod]
+        public void TestZeroValueName()
+        {
+            var controller = new ValuesController();
+            Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
+        }
+
+        [TestMethod]
+        public void TestValueName()
         {
             var controller = new ValuesController();
             Assert.AreEqual(controller.GetString(2, null), "Somebody has 2 cats");
