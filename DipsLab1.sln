@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipsLab1", "DipsLab1\DipsLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDipsLab1", "TestDipsLab1\TestDipsLab1.csproj", "{EFE2FF65-605D-41AD-B5CE-0C3508CDD306}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XTestsDipsLab1", "XTestsDipsLab1\XTestsDipsLab1.csproj", "{FE88C98D-6C5B-4C32-8EC1-B1B6AF14B064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EFE2FF65-605D-41AD-B5CE-0C3508CDD306}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFE2FF65-605D-41AD-B5CE-0C3508CDD306}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFE2FF65-605D-41AD-B5CE-0C3508CDD306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE88C98D-6C5B-4C32-8EC1-B1B6AF14B064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE88C98D-6C5B-4C32-8EC1-B1B6AF14B064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE88C98D-6C5B-4C32-8EC1-B1B6AF14B064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE88C98D-6C5B-4C32-8EC1-B1B6AF14B064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
