@@ -12,8 +12,6 @@ jobs:
       script: ./build.sh
     - stage: test
       script: ./tests.sh
-    - stage: deploy
-      script: skip
-      deploy:
+deploy:
         provider: heroku
         api_key:
