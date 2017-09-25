@@ -11,7 +11,7 @@ jobs:
     - stage: build
       script: ./build.sh
     - stage: test
-      script: ./tests.sh
+      - dotnet test ./XUnitTestProject1 -c Release -f netcoreapp2.0
     - stage: deploy
       script: skip
       deploy:
