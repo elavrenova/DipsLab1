@@ -8,13 +8,12 @@ before_script:
 - chmod a+x ./tests.sh
 jobs:
   include:
-    - stage: build
-      script: ./build.sh
-    - stage: test
-      script: ./tests.sh
-    - stage: deploy
-      script: skip
-      deploy:
-        provider: heroku
+  - stage: build
+    script: "./build.sh"
+  - stage: test
+    script: "./tests.sh"
+  - stage: deploy
+    script: skip
+    deploy:
         api_key:
-          secure: dJVKpwrxJ1IB+xO1Pjiw5gLsgEd7pqgTHfhni1lk/sG0m/e8+DsTaE2V4qvb/TYy0Kg62elxwGvYo6xiq/SH5A+L3WzhgD1ORUJw3GoUIq+QOKbdRJKyOpZI8s+VfsSdcoFURNpstgeoJE8qkO1JLbWlpFYyLq8KqwjBldYsFTP1agD1TJdarOKlp16wkCrMOiz5Zs07+YjGRm5C7Y/9Mvver3zARzCsT5UWjQAX0ID+lvqAxz1gEU08YBwPoWhZYabDzm3DD4brcqbQNB1mjP1NsPJ3hPaWDCt73PPk8hqJUftXaWSn4DYk7nxvCzkIfJGjrgjPBSzBUGRCjsozE/6m3kgfj3doG2DhslM5IDAb5/7tdGKNDkugPFwiY91py6ng/PREw39/xHRwKC3H5ZphfD13Sh1Qc9YbZY39u6bqVjT/IjHc6wuGQjjiFu9y73JkF4kYS5IdIS1fhhGE6m8ne9r9dRcXAkcDLBM4+h41IxDn6BfpvQpeukB9rH2O4bNcMNn/nAMH0y2TjgMAQQ3RxYJvCeMjattWSvCnnsB9F0OfQRa+h4M/IHuDUo5rW7NwdnolbgFpBE3ftFrR6IqQeNHyU/89xqQnKL7pRxUQu7IBNe08S31phRkUmd/MP9Go0QRt3wjYLd0J9WlFecxjx5GLsc21ikPcHCjnaRY=
+        secure: Qi4YU1K4mz+dO4I9q/7yF8PvMb/mMmMmgt3YNqrLM68Z7aP6GEmTqFpSVipw0tXqEEGqDna2JBRyJyUo5rDe2w4pnH+7lEkyqpxfV1W/vJsLuBGLqqYKIvG7vpI1WOrT2TZW3LFoUdN/3SRBHuKZLLT8Z0cs1DeeL4TtvaCN8AMS+L2pdEkbQSs4dfdR6F/xf1cU3tUlreKCthVne+4lntcKn4phmWvt2SSXmM0MDD/ZFd+D3PUVm+v8/9BVbVxHjIxT5231in4+ZKJifmAOkHhw++CIT1qBprEd5tLF7wtRDEl7rnEzNApeVEH27kxIyfg2pJlun3VGVOxpNVPdBXQWArGgNH/llb2oRiiqEB7pEe6o3Apu11rDcdmQnOhsNQdSfc95UWoWeiSZLXRT7mKhFNMtAICYIMMjWwpmPDyjSo6tJzqlDEBUrc4oFcGBq2EDm9e7SsvA+njkxIh0loUTxF4Y1rnyNQnoU5v7jwgeMPWYEo67SrLs9N8PJn9d7hSN2B63+NRUTpro3pHB+Z/+J/36LY8DSfJO+2VSkl/IRpEhm5GKbcM6gpC8OiERIluvuKbFGrqvDCpRsc3cK7i6PeF822ASe3yw7MPwJXmFKZpcN6S5jnw1zzu4ZtOZ4rv6iWzgrLfVcKTmK9pzrW9Qv+iesCy3nrUdUdClIqU=
