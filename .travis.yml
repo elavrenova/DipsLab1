@@ -14,4 +14,7 @@ jobs:
     script: "./tests.sh"
   - stage: deploy
     script: skip
-      
+    deploy:
+      provider: heroku
+      api_key:
+        secure: gmVqiPS5RIAEvje/yJBLugNK5kgNBjIJlG7Y6hTXrR4koXqjWe2tusWIE2C0iUJi4gVjn0/OfazSDnbi6yAG89j/Jao74Yqamsw5atoIxhUAd0WeThB3rFdqE+9w/yI+03PLEDrbwVSys2zjQ9scMXx1Uj7y5fBqLtfBGD6dTVi3GrI41/NY4Hh+xHvi9Skvn1ORGk3UvR2RyTEwywLo4a2lSL7U7gpRLXhPbO20BvnVbDP19B+jz4K21RYWiR1p6LGwOtIzUAXiULjtU/uikT3OYEDQZJk4jxU8VDfD4zBaNsUeQwzaT3KUpxyCWYusqGH+6o3LJKtQzqfwsOBsZjDQKml8GIY+Pqs83xsaEhE2wW35lWnlfZqK+ZdjhxSMh4YPkLen9S4hbzK/5FecPsDRpJMrYNa9MhSh7DRNl1Pd+AKUniqS5mKAENU0PPDJTdecGZchY0S12b4VvRYqwN7fB570UvefxIpiy+5Y7Q0DQedbTeWmeUeytq+hkx/TuIuPs9qk+D2ORnGb4TXBE5qCP/Y5lJ1HLUE/5qjFnbSRG5TOcTMf1jK6Sc+zAs/SdAANw8Wonp8cNgI64PpYLUoYhc8GAZD1p8g0H2DFcPDBzt8+0bonT56Qpo7f3bhBSTRTEy3HNpAsQolI6a+oqMtU4ng+enm0drJx+9nDJAw=
