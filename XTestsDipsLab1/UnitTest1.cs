@@ -34,5 +34,12 @@ namespace XTestsDipsLab1
             var controller = new ValuesController();
             Assert.Equal(controller.GetString(3, "Peter"), "Peter has 3 cats");
         }
+
+        [Fact]
+        public void TestAnotherValueName()
+        {
+            var controller = new ValuesController();
+            Assert.Equal(controller.GetString(5, "Liza"), "Liza has 5 cats");
+        }
     }
 }
