@@ -6,9 +6,9 @@ dist: trusty
 jobs:
   include:
     - stage: build
-      script: ./scripts/linux/build.sh
+      script: ./build.sh
     - stage: test
-      script: ./scripts/linux/test.sh
+      script: ./tests.sh
     - stage: deploy
       script: skip
       deploy:
