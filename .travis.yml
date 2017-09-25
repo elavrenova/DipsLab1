@@ -4,11 +4,15 @@ mono: none
 dotnet: 2.0.0
 dist: trusty
 before-script:
-  - dotnet restore
+  
 script:
   - dotnet test ./XUnitTestProject1 -c Release -f netcoreapp2.0
 jobs:
   include:
+    - stage: build
+      script: ./scripts/linux/build.sh
+    - stage: test
+      script: ./scripts/linux/test.sh
     - stage: deploy
       script: skip
       deploy:
