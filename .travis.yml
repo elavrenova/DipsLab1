@@ -1,5 +1,5 @@
 language: csharp
-solution: dips_lab1.sln
+solution: DipsLab1.sln
 mono: none
 dotnet: 2.0.0
 dist: trusty
@@ -17,5 +17,5 @@ jobs:
     deploy:
       provider: azure_web_apps
       username: lisoid95@gmail.com      
-      password: LiVVaILeA28#   
+      password: p  
       site: http://dipslab1.azurewebsites.net 
