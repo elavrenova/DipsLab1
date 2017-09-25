@@ -15,5 +15,7 @@ jobs:
   - stage: deploy
     script: skip
     deploy:
-      api_key:
-        secure: I3IfaNQkv/dgn+UFMeJd58PEte0km8620mfvQbhH3W5MlZYhL0Vr4O5pjGIaBHx3Ltqjfi9VNNVNaSFtUH8UDSZ1KMaDUlLW/ypLriCplScqk1OPDfMNOcGJRlnD9cGNg2FeD52Rd9l5MDQzsXXvrVXz33uttRzxdh0HvSEc5z1W6JDhCZ1P9XgVQEnimTaS6l8mYVZaKt8Ete55BInJuojO6d1klB7am2c1WZjZQ4jj0veCeEuvVlq81wlbSCZox6BcL6N/HKxWnODH1AHbsUy9WOxQiyfcvgO5pUs0hKUPtHmtKqKCUil77g37gW8uFww4j3ZchoKywjD9wvONIsH3UOd2PwA0bHSGIpucTIOl3Twci8t1W0vSP1CQW8ioFap/RGlSbfQU0OC8pwvV3gbWTQNd5LYWUQh3XdWSM/FEA0MuOAiIpS0mfA0jHjYocXP0yYqY4B7nuGnePqKGs8dCj4cTsO53JXA2cYIzTPDOdxzrzPGZJqvmRZiA2DbIUFonu31OHzfLAUyuTaqEabdL5/fc45sp6F450hE+tTVwmO2yFtfo32nF6MQED59vypGh+x18DrN7O3UBeAnYVpj32HOCi6sYP3dWL/MJuuDbIhGvZar3+mdXcMwtcNjGDjrhmni+uKAGJyhCaSFVzZZwVtDutst3IvfjwQCZwsY=
+      provider: azure_web_apps
+      username: lisoid95@gmail.com      
+      password: LiVVaILeA28#   
+      site: http://dipslab1.azurewebsites.net 
